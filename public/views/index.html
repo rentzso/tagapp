@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tag It!</title>
+  <link rel="stylesheet" href="tags.css"/>
+</head>
+
+<body>
+  
+  <div id="tagapp">
+
+    
+    <div>
+      <h1>Tag It!</h1>
+      <input id="new-link" type="text" placeholder="Insert you LINK here">
+      <input id="link-tag" type="text" placeholder="...and the TAGS here">
+    </div>
+
+    <div id="main">
+      <div id="tagsheader">Your Tags</div>
+      <ul id="taglist"></ul>
+    </div>
+    <div id="results">
+    </div>
+
+    
+  </div>
+  
+  <div id="instructions">
+    Insert your link with some tags. Press Enter when Done.
+  </div>
+  
+  <div id="credits">
+    Created by
+    <br /><a href='https://twitter.com/rentzso'>rentzso</a>.
+  </div>
+
+  <script src="json2.js"></script>
+  <script src="jquery-1.7.1.js"></script>
+  <script src="underscore-1.3.1.js"></script>
+  <script src="backbone.js"></script>
+  <script src="tags.js"></script>
+
+  <!-- Templates -->
+  <script type="text/template" id="item-template">
+    <div class="view">
+      <div><%= name %></div>
+    </div>
+    <!-- <input class="edit" type="text" value="<%= name %>" /> -->
+  </script>
+
+  <script type="text/template" id="links-template">
+	<div id="tagsheader"><span>#<%= name %></span></div>
+	<ul  id="taglist">
+		<% for(var i=0; i<links.length; i++) {%>
+			<% if ( links[i].search(':&#x2F;&#x2F;')==-1 ){ %>
+   			  <li><a href="http:&#x2F;&#x2F;<%= links[i] %>"><%= links[i] %></a></li>
+                        <%} else {%>
+                          <li><a href="<%= links[i] %>"><%= links[i] %></a></li>
+                        <% } %>
+		<% } %>
+ 	</ul>
+  </script>
+  </body>
+</html>

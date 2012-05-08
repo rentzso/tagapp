@@ -1,0 +1,128 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #eeeeee;
+	color: #333333;
+	width: 520px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+a:link {color: #222222;}
+a:visited {color: #777777;}
+a:hover {color: #000000; }
+a:active {color: #999999;}
+
+
+#tagapp {
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 40px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#tagapp h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+
+#tagapp input[type="text"] {
+	width: 466px;
+	font-size: 24px;
+	font-family: inherit;
+	line-height: 1.4em;
+	border: 0;
+	outline: none;
+	padding: 6px;
+	border: 1px solid #999999;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+
+#tagapp input::-webkit-input-placeholder {
+	font-style: italic;
+}
+
+#main {
+	display: none;
+}
+
+#results {
+	display: none;
+}
+
+#tagsheader {
+	margin: 10px 0;
+        padding: 14px 0px;
+	font-size: 24px;
+        font-weight: bold;
+	border-bottom: 1px solid #cccccc;
+}
+
+#taglist {
+	margin: 10px 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+#taglist li {
+	padding: 0px 20px 9px 0;
+	position: relative;
+	font-size: 24px;
+}
+
+#taglist li:hover {
+        font-size: 28px;
+        cursor: pointer;
+}
+
+
+#taglist li:last-child {
+        border-bottom: 1px solid #cccccc;
+}
+
+
+
+
+#instructions {
+	margin: 10px auto;
+	color: #777777;
+	text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+	text-align: center;
+}
+
+#instructions a {
+	color: #336699;
+}
+
+#credits {
+	margin: 30px auto;
+	color: #999;
+	text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+	text-align: center;
+}
+
+#credits a {
+	color: #888;
+}
