@@ -17,7 +17,6 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
-  console.log(__dirname);
   app.use(express.static(path.join(__dirname, '/public')));
   app.set("view options", {layout: false});
 
